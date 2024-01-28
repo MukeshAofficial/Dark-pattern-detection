@@ -2,28 +2,43 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    <link rel="stylesheet" href="css/popup.css" type="text/css">
-    <script src="js/popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
     <div class="modal-header">
-        <h1>
-            Dark Patterns
-        </h1>
+        <h1>Dark Patterns</h1>
     </div>
-    <div class="modal-content">
+    <div class="modal-content" id="analysis-section">
         <div class="container">
+            <div class="icon"></div>
             <p class="label">Dark Patterns</p>
             <p class="number">0</p>
         </div>
-        <button class="analyze-button" type="button">ANALYZE SITE</button>
+        <button class="analyze-button" type="button" id="analyzeButton">ANALYZE SITE</button>
         <button class="recommendation-button" type="button">RECOMMENDATION</button>
     </div>
-    <div class="modal-footer">
-        <a class="link" href="https://ethicaldesign.org">What is Dark Pattern ?</a>
+    <div class="modal-content" id="result-section" style="display: none;">
+        <div class="result-container">
+            <h1 style="color:#FF0000;">Analysis Report</h1>
+            <div class="result-content">
+                <p class="result-label">Dark Patterns Detected:</p>
+                <p class="result-number">3</p>
+            </div>
+            <div class="result-content">
+                <p class="result-label" style="color: red;">Recommendation:</p>
+                <p class="result-text">Urgency or Fear: Creating a sense of urgency or fear to persuade users to take immediate action. This can include limited-time offers, countdown timers, or warnings about missing out on an opportunity.</p>
+            </div>
+            <div class="result-content">
+                <p class="result-label" style="color: red;">Learn More</p>
+                <a class="result-link" href="https://ethicaldesign.org" style="color: #D8D8D8;"></a>
+            </div>
+        </div>
     </div>
+    <div class="modal-footer">
+        <a class="link" href="https://ethicaldesign.org">What is Dark Pattern?</a>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

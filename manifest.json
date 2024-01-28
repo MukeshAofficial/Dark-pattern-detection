@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "DarkPatternDetector",
+  "name": "Dark Pattern Detector",
   "version": "1.0",
   "description": "Detect and combat dark patterns on websites.",
   "permissions": [
